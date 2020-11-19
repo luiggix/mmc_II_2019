@@ -1,0 +1,92 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Nov 19 11:35:48 2020
+
+@author: luiggi
+"""
+1D_Poisson_01.py
+- Conducción de calor estacionaria, sin fuentes ni sumideros, 
+  condiciones tipo Dirichlet, conductividad térmica constante.
+- Los datos los pide el programa durante la ejecución.
+  
+1D_Poisson_02.py
+- Conducción de calor estacionaria, sin fuentes ni sumideros, 
+  condiciones tipo Dirichlet, conductividad térmica variable.
+- Los datos los pide el programa durante la ejecución.
+
+1D_Poisson_03.py
+- Conducción de calor estacionaria, sin fuentes ni sumideros, 
+  unca condición de tipo Dirichlet y una condición de tipo Neumman, 
+  conductividad térmica constante. 
+- Sistema (N+1)x(N+1):
+  Para manejar la condición Neumman se agrega una ecuación más al sistema 
+  lineal y la solución de este último proporciona el valor de la temperatura 
+  en el extremo donde se da la condición de frontera de tipo Neumman.
+  
+- Los datos se introducen en la línea de comandos:
+  python 1D_Poisson_03.py a b N Dirichlet Neumman
+  Por ejemplo:
+  python 1D_Poisson_03.py 0 1 10 1 0.1
+
+1D_Poisson_04.py
+- Conducción de calor estacionaria, sin fuentes ni sumideros, 
+  unca condición de tipo Dirichlet y una condición de tipo Neumman, 
+  conductividad térmica constante. 
+- Sistema (N)x(N):
+  Para manejar la condición Neumman NO se agrega una ecuación al sistema, de 
+  tal manera que tenemos un sistema de NxN y la solución solo se calcula para
+  los nodos interiores. Al final, se obtiene el valor de la temperatura en el
+  extremo donde se da la condición de tipo Neumman, evaluando la condición 
+  de frontera.
+  
+- Los datos se introducen en la línea de comandos:
+  python 1D_Poisson_04.py a b N Dirichlet Neumman
+  Por ejemplo:
+  python 1D_Poisson_04.py 0 1 10 1 0.1
+
+1D_Calibracion_01.py
+- Ejemplo de calibración 01
+- Los datos se introducen por medio de un archivo
+  Por ejemplo:
+  python 1D_Calibracion_01.py INPUT_01 SALIDA
+
+1D_Calibracion_02_I.py
+- Ejemplo de calibración 02
+- Implementación I de la condición de frontera de tipo Neumman.
+- Sistema (N+1)x(N+1):
+  Para manejar la condición Neumman NO se agrega una ecuación al sistema, de 
+  tal manera que tenemos un sistema de NxN y la solución solo se calcula para
+  los nodos interiores. Al final, se obtiene el valor de la temperatura en el
+  extremo donde se da la condición de tipo Neumman, evaluando la condición 
+  de frontera.
+- Los datos se introducen por medio de un archivo
+  Por ejemplo:
+  python 1D_Calibracion_02_I.py INPUT_02 SALIDA
+
+1D_Calibracion_02_II.py
+- Ejemplo de calibración 02
+- Implementación II de la condición de frontera de tipo Neumman.
+- Sistema (N)x(N):
+  Para manejar la condición Neumman NO se agrega una ecuación al sistema, de 
+  tal manera que tenemos un sistema de NxN y la solución solo se calcula para
+  los nodos interiores. Al final, se obtiene el valor de la temperatura en el
+  extremo donde se da la condición de tipo Neumman, evaluando la condición 
+  de frontera.
+- Los datos se introducen por medio de un archivo
+  Por ejemplo:
+  python 1D_Calibracion_02_II.py INPUT_02 SALIDA
+
+1D_Calibracion_02_IV.py
+- Ejemplo de calibración 02
+- Implementación IV de la condición de frontera de tipo Neumman.
+- Sistema (N+1)x(N+1):
+  Para manejar la condición Neumman NO se agrega una ecuación al sistema, de 
+  tal manera que tenemos un sistema de NxN y la solución solo se calcula para
+  los nodos interiores. Al final, se obtiene el valor de la temperatura en el
+  extremo donde se da la condición de tipo Neumman, evaluando la condición 
+  de frontera.
+- Los datos se introducen por medio de un archivo
+  Por ejemplo:
+  python 1D_Calibracion_02_IV.py INPUT_02 SALIDA
+
