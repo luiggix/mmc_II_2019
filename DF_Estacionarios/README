@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Nov 19 11:35:48 2020
-
-@author: luiggi
-"""
 1D_Poisson_01.py
 - Conducción de calor estacionaria, sin fuentes ni sumideros, 
   condiciones tipo Dirichlet, conductividad térmica constante.

@@ -210,7 +210,7 @@ ImprimeDatos(a,b,N,h,boundA,"Dirichlet",boundB,"Dirichlet")
 
 # Definicion del sistema lineal de N x N
 f = np.zeros(N)         # Lado derecho
-w = 4.5 * np.pi
+w = 2.5 * np.pi
 A = Laplaciano1D(N, (w * h)**2-2) # Matriz del sistema
 
 # Aplicacion de las condiciones de frontera Dirichlet
